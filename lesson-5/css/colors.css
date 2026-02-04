@@ -2,7 +2,7 @@
 html {
 	box-sizing: border-box;
 }
-	*, *:before, *:after {
+	*, *::before, *::after {
 	box-sizing: inherit;
 }
 html {
@@ -22,25 +22,26 @@ header {
 	/* STEP 1b: Select a HUE using the Hue Slider */
 	/* STEP 1c: De-Saturate the colour a bit, reduce the Lightness, and make the colour slightly transparent by adjusting the Alpha. */
 	/* STEP 1d: Copy the resulting RGBa value and replace the background-color below */
-	background-color: black;
+	background-color: #a374b989;
 	padding: 1% 10%;
+	/* opacity: 0.5; */
 }
 header h1 {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	color: white;
 	/* STEP 3: Soften the <h1> element text using the opacity property */
-
+	opacity: 1;
 }
 main {
 	padding: 0 10%;
 }
 main h2 {
 	/* STEP 2: Set the <h2> inside the <main> to the same transparent purple, but use the HSLa colour syntax, instead */
-
+	color: rgb(163 116 185 / 0.655);
 	font-size: 500%;
 	margin: 0;	
-	color: white;
+	/* color: white; */
 }
 main p {
 	margin-top: 0;
@@ -49,9 +50,10 @@ footer {
 	padding: 0 10%;
 }
 footer p {
-	font-size: 60%;
+	font-size: 80%;
 	/* STEP 4: Set the <footer> element text to the same purple as in step 1 and 2, using a combination of hexadecimal color syntax and opacity. */
-	color: white;
+	color: #a374b9ec;
+	/* color: white; */
 }
 
 /* STEP 5: Adjust the HUE of the background-color of the <header>, the colour of the <h2>, and the colour of the <footer> text to a different value - note that this is more difficult with HEX and RGB colour notation */
