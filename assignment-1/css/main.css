@@ -2,10 +2,12 @@
 
 body {
   background-color: #caaa80; 
-  color: #2b1b12;           
+  color: rgb(43, 27, 18);           
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.8;
 }
+/* Center the whole “poster” */
+
 
 /* HEADER */
 header {
@@ -33,6 +35,40 @@ header p {
   letter-spacing: 1.4px;
   font-size: 19px;
   margin-top: 7px; 
+  margin-bottom: 1px;
 }
 
+/* MAIN */
+main {
+  max-width: 810px;
+  margin: auto;
+}
 
+/* LYRICS SECTION */
+/* lyrics box */
+main section:first-of-type {
+  padding: 40px 30px;
+  border: 4px solid rgb(43, 27, 18);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+/* lyrics heading */
+main section:first-of-type h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin: 10px;
+  border-bottom: 3px dotted #2b1b12;
+  padding-bottom: 15px;
+}
+/* lyrics sections heading */
+strong {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+/* background vocals (lyrics in brackets) */
+em {
+  opacity: 0.60;
+}
+
+/* ABOUT SONG AND ARTIST SECTION */
