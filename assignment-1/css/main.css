@@ -1,8 +1,14 @@
 @charset "UTF-8";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #caaa80; 
-  color: rgb(43, 27, 18);           
+  background-color: #caaa80;
+  color: rgb(43, 27, 18);
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.8;
 }
@@ -10,8 +16,9 @@ body {
 /* HEADER */
 header {
   text-align: center;
-  padding: 55px ;
+  padding: 55px;
 }
+
 /* song name */
 header h1 {
   font-size: 45px;
@@ -20,19 +27,21 @@ header h1 {
   margin: 0;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
+
 /* artists */
 header h2 {
   font-size: 22px;
   letter-spacing: 1px;
   margin-top: 3px;
 }
+
 /* album name */
 header p {
   font-family: "Belleza", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1.4px;
   font-size: 19px;
-  margin-top: 7px; 
+  margin-top: 7px;
   margin-bottom: 1px;
 }
 
@@ -48,10 +57,13 @@ main {
 main section:first-of-type {
   padding: 40px 30px;
   border: 4px solid rgb(43, 27, 18);
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: #bf9763a1;
   text-align: center;
   font-size: 20px;
+  outline: 1px solid #2b1b12;
+  outline-offset: -12px;
 }
+
 /* lyrics heading */
 main section:first-of-type h3 {
   font-size: 22px;
@@ -61,16 +73,19 @@ main section:first-of-type h3 {
   border-bottom: 3px dotted #2b1b12;
   padding-bottom: 15px;
 }
+
 /* lyrics sections heading (chorus, verse, etc) */
 strong {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 14px;
 }
+
 /* background vocals (lyrics in brackets) */
 em {
   opacity: 0.60;
 }
+
 
 /* ABOUT SONG AND ARTIST SECTION */
 main section:nth-of-type(2),
@@ -78,6 +93,7 @@ main section:nth-of-type(3) {
   margin-top: 80px;
   padding: 0 10px;
 }
+
 /* headers for about song and artist  */
 main section:nth-of-type(2) h3,
 main section:nth-of-type(3) h3 {
@@ -88,6 +104,7 @@ main section:nth-of-type(3) h3 {
   border-bottom: 2px solid #2b1b12;
   padding-bottom: 8px;
 }
+
 /* paragrpah about song and artist */
 main section:nth-of-type(2) p,
 main section:nth-of-type(3) p {
@@ -95,6 +112,7 @@ main section:nth-of-type(3) p {
   margin: 0 auto;
   font-size: 20px;
 }
+
 /* image of band */
 main section img {
   max-width: 100%;
@@ -102,4 +120,79 @@ main section img {
   margin: auto;
   margin-top: 50px;
   margin-bottom: -10px;
+}
+
+/* TRACK LIST */
+/* track list header */
+main section:last-of-type h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 20px;
+  margin: 0 0 15px;
+  border-bottom: 2px solid #2b1b12;
+  padding-bottom: 8px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+/* albulm name */
+main section:last-of-type h4 {
+  font-size: 20px;
+}
+
+/* artists */
+main section:last-of-type p {
+  font-size: 17px;
+  font-style: italic;
+}
+
+/* track section */
+main section:last-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 40px;
+  margin-top: 70px;
+  font-family: "Belleza", sans-serif;
+}
+
+main section:last-of-type h3,
+main section:last-of-type h4,
+main section:last-of-type p:first-of-type {
+  flex: 0 0 100%;
+  margin: 0;
+}
+
+/* album cover */
+main section:last-of-type img {
+  width: 350px;
+  max-width: 100%;
+  margin-top: 2px;
+}
+
+/* tracks */
+main section:last-of-type ul {
+  flex: 1 1 520px;
+  column-count: 2;
+  column-gap: 40px;
+  margin: 0;
+  padding: 22px 26px;
+  border: 2px solid rgb(103 72 60);
+  background-color: #bf9763a1;
+  outline: 1px solid #2b1b12;
+  outline-offset: -6px;
+}
+
+/* individual tracks */
+main section:last-of-type li {
+  margin-bottom: 20px;
+  margin-left: 100px;
+  list-style-type: decimal;
+  font-size: 23px;
+  color: rgb(81, 57, 47);
+}
+
+/* date and lenght */
+main section:last-of-type p:last-of-type {
+  flex: 0 0 100%;
+  margin-top: 15px;
+  font-size: 18px;
+  opacity: 0.7;
 }
