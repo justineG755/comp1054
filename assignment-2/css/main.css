@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body{
+    background-color: black;
+}
+#container{
+    max-width:750px;
+    margin:20px auto;
+    padding:35px;
+    background-color:white;
+}
+
+main {
+  border: 0.5px solid rgba(0, 0, 0, 0.46);
+  margin-top: -100px;
+  padding: 100px 0px 25px;
+
+}
+
