@@ -40,7 +40,6 @@ h1{
 h1 em{
     font-style: normal;
     color: rgb(208, 0, 0);
-    
 }
 
 header p{
@@ -49,4 +48,12 @@ header p{
   text-transform: uppercase;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 15.5px;
+}
+
+article:first-of-type img{
+    width:180px;
+    height: 100px;
+    float:right;
+    margin-right:15px;
+    margin-top: -100px;
 }
