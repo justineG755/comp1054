@@ -15,5 +15,19 @@ main {
   margin-top: -100px;
   padding: 100px 0px 25px;
 
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 25px;
+  grid-auto-flow:column;
+}
+
+article{
+    grid-column: 2;
+    
+}
+
+aside{
+    grid-column: 1;
+    
 }
 
