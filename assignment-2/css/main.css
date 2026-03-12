@@ -1,35 +1,36 @@
 @charset "UTF-8";
 
-body{
+body {
     background-color: black;
 }
-#container{
-    max-width:750px;
-    margin:20px auto;
+
+#container {
+    max-width: 750px;
+    margin: 20px auto;
     padding: 1px 35px;
-    background-color:white;
+    background-color: white;
 }
 
 main {
-  border: 0.5px solid rgba(0, 0, 0, 0.46);
-  margin-top: 85px;
-  padding: 100px 0px 25px;
+    border: 0.5px solid rgba(0, 0, 0, 0.46);
+    margin-top: 85px;
+    padding: 100px 0px 2px;
 
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 25px;
-  grid-auto-flow:column;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+    grid-auto-flow: column;
 }
 
-article{
+article {
     grid-column: 2;
 }
 
-aside{
+aside {
     grid-column: 1;
 }
 
-h1{
+h1 {
     text-transform: lowercase;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
@@ -37,71 +38,140 @@ h1{
     margin-bottom: -95px;
 }
 
-h1 em{
+h1 em {
     font-style: normal;
     color: rgb(208, 0, 0);
 }
 
-header p{
-  margin: -85px;
-  margin-left: 0px;
-  text-transform: uppercase;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 15.5px;
+header p {
+    margin: -85px;
+    margin-left: 0px;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15.5px;
 }
 
-article:first-of-type img{
-    width:180px;
+article:first-of-type img {
+    width: 180px;
     height: 110px;
-    float:right;
-    margin-right:1px;
+    float: right;
+    margin-right: 1px;
     margin-top: -110px;
 }
 
-aside:first-of-type{
+aside:first-of-type {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
-    font-size: 16px;
-    width:185px;
+    font-size: 16.1px;
+    width: 185px;
     float: left;
-    margin-left:40px;
+    margin-left: 40px;
     letter-spacing: 1px;
-    line-height: 26px;
+    line-height: 28px;
     margin-top: -10px;
-    border-right:1px solid rgba(204, 204, 204, 0.982);
-    padding-right:37px;
+    border-right: 1px solid rgba(204, 204, 204, 0.982);
+    padding-right: 37px;
 }
 
-aside:first-of-type a{
+aside:first-of-type a {
     color: black;
-    text-decoration:none;
+    text-decoration: none;
     font-weight: 550;
-    display:block;
-    margin-top:-18px;
-    word-break:break-all;
+    display: block;
+    margin-top: -18px;
+    word-break: break-all;
     width: 100px;
 }
 
-article:first-of-type{
-    width:410px;
+article:first-of-type {
+    width: 410px;
     padding: 10px;
     font-family: Helvetica, Arial, sans-serif;
     margin-left: 10px;
 }
 
-article:first-of-type h2{
-    margin-top:0px;
+article:first-of-type h2 {
+    margin-top: 0px;
     font-weight: 560;
     font-size: 27px;
     letter-spacing: 1px;
     color: rgb(208, 0, 0);
 }
 
-article:first-of-type p{
-    font-size: 11px;
+article:first-of-type p {
+    font-size: 12.6px;
     text-align: justify;
     margin-top: -20px;
     font-weight: lighter;
-    line-height: 13px;
+    line-height: 14px;
+}
+
+article:last-of-type img {
+    margin-left: 15px;
+    margin-top: -145px;
+    width: 410px;
+    height: 260px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+aside:last-of-type {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: rgba(246, 240, 240, 0.91);
+    padding: 25px;
+    width: 213px;
+    margin-top: 20px;
+}
+
+aside:last-of-type h2 {
+    margin-top: 0;
+    font-size: 19px;
+    color: rgb(208, 0, 0);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+aside:last-of-type p,
+aside li,
+aside h3 {
+    font-size: 12px;
+    line-height: 15px;
+    width: 200px;
+    margin-top: -15px;
+    font-weight: lighter;
+
+}
+
+aside:last-of-type ul {
+    padding-left: 18px;
+    margin-top: 20px;
+}
+
+aside:last-of-type li p {
+    line-height: 18px;
+}
+
+li::marker {
+    content: "+ ";
+}
+
+aside:last-of-type a {
+    color: black;
+    text-decoration: none;
+}
+
+aside:last-of-type h2::before {
+    content: "+ ";
+    font-weight: lighter;
+    color: black;
+    font-size: 70px;
+    margin-right: -16px;
+    position: absolute;
+    left:220px; 
+    top:600px;
+}
+
+aside:last-of-type h2 {
+    margin-left: 25px;
 }
 
