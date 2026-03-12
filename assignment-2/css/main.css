@@ -52,10 +52,10 @@ header p{
 
 article:first-of-type img{
     width:180px;
-    height: 100px;
+    height: 110px;
     float:right;
-    margin-right:15px;
-    margin-top: -100px;
+    margin-right:1px;
+    margin-top: -110px;
 }
 
 aside:first-of-type{
@@ -80,5 +80,28 @@ aside:first-of-type a{
     margin-top:-18px;
     word-break:break-all;
     width: 100px;
-    
 }
+
+article:first-of-type{
+    width:410px;
+    padding: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: 10px;
+}
+
+article:first-of-type h2{
+    margin-top:0px;
+    font-weight: 560;
+    font-size: 27px;
+    letter-spacing: 1px;
+    color: rgb(208, 0, 0);
+}
+
+article:first-of-type p{
+    font-size: 11px;
+    text-align: justify;
+    margin-top: -20px;
+    font-weight: lighter;
+    line-height: 13px;
+}
+
