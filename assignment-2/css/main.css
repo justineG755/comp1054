@@ -1,9 +1,11 @@
 @charset "UTF-8";
 
+/* background colour of page */
 body {
     background-color: black;
 }
 
+/* magazine background white colour */
 #container {
     max-width: 750px;
     margin: 20px auto;
@@ -11,7 +13,10 @@ body {
     background-color: white;
 }
 
+/* adds a small border around */
+/* creates the main grid layout for the page */
 main {
+   
     border: 0.5px solid rgba(0, 0, 0, 0.46);
     margin-top: 85px;
     padding: 100px 0px 2px;
@@ -22,14 +27,16 @@ main {
     grid-auto-flow: column;
 }
 
+/* puts article content in the second grid column (so they line up next to other section)*/
 article {
     grid-column: 2;
 }
-
+/* puts sidebar content in the first grid column (so they line up next to other section)*/
 aside {
     grid-column: 1;
 }
 
+/* styles the main page heading and position */
 h1 {
     text-transform: lowercase;
     font-family: "Montserrat", sans-serif;
@@ -38,11 +45,13 @@ h1 {
     margin-bottom: -95px;
 }
 
+/* removes italic and makes font red */
 h1 em {
     font-style: normal;
     color: rgb(208, 0, 0);
 }
 
+/* styles the header subtile and position */
 header p {
     margin: -85px;
     margin-left: 0px;
@@ -51,6 +60,7 @@ header p {
     font-size: 15.5px;
 }
 
+/* styles the small image  */
 article:first-of-type img {
     width: 180px;
     height: 110px;
@@ -59,6 +69,7 @@ article:first-of-type img {
     margin-top: -110px;
 }
 
+/* styles the first sidebar section */
 aside:first-of-type {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
@@ -73,6 +84,7 @@ aside:first-of-type {
     padding-right: 37px;
 }
 
+/* styles the links in the section */
 aside:first-of-type a {
     color: black;
     text-decoration: none;
@@ -83,6 +95,7 @@ aside:first-of-type a {
     width: 100px;
 }
 
+/* styles the first article section  */
 article:first-of-type {
     width: 410px;
     padding: 10px;
@@ -90,6 +103,7 @@ article:first-of-type {
     margin-left: 10px;
 }
 
+/* styles the header in the first article section */
 article:first-of-type h2 {
     margin-top: 0px;
     font-weight: 560;
@@ -98,6 +112,7 @@ article:first-of-type h2 {
     color: rgb(208, 0, 0);
 }
 
+/* styles the first paragrpah  */
 article:first-of-type p {
     font-size: 12.6px;
     text-align: justify;
@@ -106,6 +121,7 @@ article:first-of-type p {
     line-height: 14px;
 }
 
+/* styles the big picture size and position */
 article:last-of-type img {
     margin-left: 15px;
     margin-top: -145px;
@@ -115,6 +131,7 @@ article:last-of-type img {
     margin-bottom: 10px;
 }
 
+/* styles the last sidebar section size and font */
 aside:last-of-type {
     font-family: Helvetica, Arial, sans-serif;
     background-color: rgba(246, 240, 240, 0.91);
@@ -123,6 +140,7 @@ aside:last-of-type {
     margin-top: 20px;
 }
 
+/* styles the last sidebar heading */
 aside:last-of-type h2 {
     margin-top: 0;
     font-size: 19px;
@@ -131,6 +149,7 @@ aside:last-of-type h2 {
     letter-spacing: 1px;
 }
 
+/* styles the last sidebar content */
 aside:last-of-type p,
 aside li,
 aside h3 {
@@ -142,24 +161,29 @@ aside h3 {
 
 }
 
+/* moves list content over  */
 aside:last-of-type ul {
     padding-left: 18px;
     margin-top: 20px;
 }
 
+/* adds sapce between list content */
 aside:last-of-type li p {
     line-height: 18px;
 }
 
+/* changed the list bullets to a plus */
 li::marker {
     content: "+ ";
 }
 
+/* removed the links colour and line */
 aside:last-of-type a {
     color: black;
     text-decoration: none;
 }
 
+/* adds big plus sign in the last sidebar section */
 aside:last-of-type h2::before {
     content: "+ ";
     font-weight: lighter;
@@ -172,14 +196,17 @@ aside:last-of-type h2::before {
     width: 100%;
 }
 
+/* moves heading over */
 aside:last-of-type h2 {
     margin-left: 25px;
 }
+
 
 article:last-of-type{
     padding:10px;
 }
 
+/* styles last article section */
 article:last-of-type h2{
     font-family: Helvetica, Arial, sans-serif;
     font-size:50px;
@@ -188,6 +215,7 @@ article:last-of-type h2{
     margin-bottom:-15px;
 }
 
+/* styles last article section paragraph */
 article:last-of-type p{
     font-size:14px;
     line-height:15px;
@@ -195,17 +223,20 @@ article:last-of-type p{
     width: 410px;
 }
 
+/* changes the highlight colour to gray */
 mark{
     background-color:#c4c4c36c;
     color:black;
 }
 
+/* removes link colour and underline and makes it bold */
 a{
     color:black;
     text-decoration:none;
     font-weight: bold;
 }
 
+/* styles the footer and makes lowercase */
 footer{
     font-family: Helvetica, Arial, sans-serif;
     font-size:16px;
@@ -213,12 +244,14 @@ footer{
     text-transform: lowercase;
 }
 
+/* removes italic and make bold */
 footer em{
     font-style:normal;
     font-weight:bold;
     padding: 10px;
 }
 
+/* make CAA bold uppercase and closer to the other letters */
 footer abbr{
     text-transform: uppercase;
     font-weight: bold;
