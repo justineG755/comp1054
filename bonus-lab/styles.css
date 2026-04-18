@@ -1,0 +1,176 @@
+/* LAYOUT */
+.container {
+    background-color: ;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* FONTS */
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+div {
+    font-size: 20px;
+    font-family: cursive
+}
+
+/* INDIVIDUAL BOXES */
+.box {
+    width: 230px;
+    height: 140px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* BOX COLOURS */
+.general {
+    background-color: #dbeafe;
+}
+
+.links {
+    background-color: #dcfce7;
+}
+
+.selection {
+    background-color: #fef9c3;
+}
+
+.drag {
+    background-color: #fde2f7;
+}
+
+.resize {
+    background-color: #ede9fe;
+}
+
+.zoom {
+    background-color: #fee2e2;
+}
+
+.custom{
+    background-color: #cffafe;
+}
+
+/* HOVER EFFECT */
+.box:hover {
+    transform: scale(1.20);
+}
+
+
+
+/*========== DEMO ==========*/
+
+
+/* GENERAL */
+
+/* default cursor */
+.general {
+  cursor: default;
+}
+
+/* no cursor */
+.general {
+  cursor: none;
+}
+
+
+
+/* LINKS AND STATUS */
+
+/* pointer cursor */
+.links {
+  cursor: pointer;
+}
+
+/* help cursor */
+.links {
+  cursor: help;
+}
+
+/* progress/wait cursor */
+.links {
+  cursor: wait;
+}
+
+
+
+/* SELECTION */
+
+/* text cursor */
+.selection {
+  cursor: text;
+}
+
+/* crosshair cursor */
+.selection {
+  cursor: crosshair;
+}
+
+
+
+/* DRAG & DROP*/
+
+/* grab vs grabbing cursor */
+.drag {
+  cursor: grab;
+}
+
+/* copy cursor */
+.drag {
+  cursor: copy;
+}
+
+/* not allowed */
+.drag {
+  cursor: not-allowed;
+}
+
+
+
+
+/* RESIZE*/
+
+
+/* ew-resize */
+.resize {
+  cursor: ew-resize;
+}
+
+/* ns-resize */
+.resize {
+  cursor: ns-resize;
+}
+
+/* nesw-resize */
+.resize {
+  cursor: nesw-resize;
+}
+
+
+
+
+
+/* ZOOM*/
+
+/* zoom-in cursor */
+.zoom{
+  cursor: zoom-in;
+}
+/* zoom-out cursor */
+.zoom{
+  cursor: zoom-out;
+}
+
+.custom {
+  cursor: url("astronaut.png") , help;
+}
