@@ -724,5 +724,53 @@ nav ul li {
 
 
 
-/* MY CSS */
+/* ==================================================
+   MY CSS
+   Theme: Underwater
+   ================================================== */
+
+/* Underwater background colour */
+body {
+  background: radial-gradient(circle at top, #7ee7f7 0%, #2d9cdb 30%, #0b4f6c 60%, #05263b 100%);
+}
+
+header h1 {
+  margin-bottom: 1rem;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #1795cf;
+  text-shadow:
+    0 0 8px rgba(255,255,255,0.8),
+    0 0 20px rgba(126,224,255,0.6);
+  padding: 1.2rem 2rem;
+  border: 3px solid rgba(173, 239, 255, 0.7);
+  border-radius: 800px;
+  background: rgba(255, 255, 255, 0.105);
+  box-shadow: 0 0 20px rgba(20, 65, 86, 0.25);
+}
+
+header h2 {
+  margin: 1.5rem auto 1rem;
+  font-size: 30px;
+  color: #052064c7;
+  
+}
+
+header p {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: #052064c7;
+}
+
+header a {
+  color: #052064c7;
+}
+
+.link-github {
+  background-color:#1795cf45 !important;
+  border: none;
+  box-shadow: none !important;
+  border-radius: 20px;
+}
 
