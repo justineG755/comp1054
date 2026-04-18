@@ -738,6 +738,7 @@ header h1 {
   margin-bottom: 1rem;
   font-family: "Trebuchet MS", Arial, sans-serif;
   font-weight: 900;
+  font-size: 50px;
   letter-spacing: 0.4em;
   text-transform: uppercase;
   color: #1795cf;
@@ -753,7 +754,7 @@ header h1 {
 
 header h2 {
   margin: 1.5rem auto 1rem;
-  font-size: 30px;
+  font-size: 25px;
   color: #052064c7;
   
 }
@@ -832,31 +833,42 @@ nav {
   padding: 10px 0;
 }
 
+
 nav ul {
-  gap: 55px;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 12px; 
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 nav ul a {
-  color: #aeefff;
-  padding: 8px 14px;
+  display: block; 
+  text-align: center; 
+  color: rgb(174, 239, 255);
+  padding: 10px 12px;
   border-radius: 300px;
+  text-decoration: none;
 }
+
 
 nav ul a:hover {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   background: rgba(255,255,255,0.1);
-  box-shadow: 0 0 8px #7ee0ff;
-  transform:scale(1.5);
+  box-shadow: 0 0 8px rgb(126, 224, 255);
+  transform: scale(1.05); 
 }
 
-header h1 {
-  position: relative;
-  z-index: 1;
+
+@media (min-width: 768px) {
+  nav ul {
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
-
-  
-
-
 
 
 
