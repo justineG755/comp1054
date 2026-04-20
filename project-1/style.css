@@ -1054,12 +1054,13 @@ nav ul a:hover {
   background: linear-gradient(
     to bottom,
     rgb(7, 65, 90),     
-    rgb(49, 121, 162) 60%,   
-    rgb(126, 229, 238) 100%    
+    rgb(30, 96, 124)  60%,   
+    rgb(120, 215, 214) 100%    
   );
   width: 100%;
   max-width: none;
   padding: 3rem 1rem;
+  height: 350px;
 }
 
 @media (min-width: 768px) {
@@ -1098,7 +1099,6 @@ nav ul a:hover {
   border: 2px solid rgba(255,255,255,0.35);
   border-radius: 999px;
   padding: 12px 23px;
-  
 }
 
 .profile .container > a:hover {
@@ -1145,7 +1145,6 @@ nav ul a:hover {
   background: rgba(255,255,255,0.2);
 }
 
-/* View All Styles button */
 #styles .link-allstyles {
   border-radius: 999px;
   background: rgba(16, 58, 89, 0.8);
@@ -1163,5 +1162,37 @@ nav ul a:hover {
 
 #styles {
   margin-top: 0 ;
+  margin-bottom: 0 ;
 }
 
+.page-footer::before {
+  display: none;
+}
+
+.page-footer {
+  text-align: center;
+  color: #eafcff;
+  background: linear-gradient(
+    to top,
+    #05263b,
+    #042939
+  );
+}
+
+.page-footer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 1;
+}
+
+.page-footer a {
+  text-decoration: none;
+}
+
+@media (min-width:768px){
+  .page-footer{
+    margin-top: -60px;
+  }
+}
