@@ -1156,3 +1156,12 @@ nav ul a:hover {
   background: rgba(16, 58, 89, 0.95);
   transform: translateY(-3px);
 }
+
+.profile {
+  margin-bottom: 0 ;
+}
+
+#styles {
+  margin-top: 0 ;
+}
+
