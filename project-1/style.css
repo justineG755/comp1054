@@ -1340,3 +1340,27 @@ nav ul a:hover {
 #styles .features li > span {
   animation: sway 5s ease-in-out infinite;
 }
+
+/* STEPS TO CONTRIBUTE  */
+
+/* styles the list items */
+#contribute li {
+  color: #eafcff;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+/* styles the heading with glow effect like the other ones */
+#contribute h3 {
+  text-align: center;
+  color: rgba(197, 234, 245, 0.95);
+  margin-top: 25px;
+  text-shadow:
+    0 0 4px rgba(255,255,255,0.7),
+    0 0 20px rgba(126,224,255,0.5);
+}
+
+/* styles the links inside the steps  */
+#contribute ol a {
+  color: #eafcff;
+  text-decoration: underline;
+}
