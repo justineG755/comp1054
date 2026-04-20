@@ -777,16 +777,22 @@ nav ul li {
 
 
 
+
+
+
 /* ==================================================
    MY CSS
    Theme: Underwater
    ================================================== */
 
-/* Underwater background colour */
+/* Underwater background colour for whole page */
 body {
   background: radial-gradient(circle at top, #7ee7f7 0%, #2d9cdb 30%, #0b4f6c 60%, #05263b 100%);
 }
 
+/* MAIN HEADING  */
+
+/* styles the main page title */
 header h1 {
   margin-bottom: 1rem;
   font-family: "Trebuchet MS", Arial, sans-serif;
@@ -805,22 +811,25 @@ header h1 {
   box-shadow: 0 0 20px rgba(20, 65, 86, 0.25);
 }
 
+/* styles the subtitle text under the title */
 header h2 {
   margin: 1.5rem auto 1rem;
   font-size: 25px;
   color: #052064c7;
-
 }
 
+/* styles the paragraph text in the header */
 header p {
   font-family: "Trebuchet MS", Arial, sans-serif;
   color: #052064c7;
 }
 
+/* chnages colour to link in header */
 header a {
   color: #052064c7;
 }
 
+/* Styles the githbu button in header */
 .link-github {
   background-color: #1795cf45 !important;
   border: none;
@@ -828,12 +837,16 @@ header a {
   border-radius: 20px;
 }
 
+/* BUBBLE BACKGROUND ANIMATION */
+
+/* keeps it inside main and header */
 header,
 main {
   position: relative;
   overflow: hidden;
 }
 
+/* adds the flowing bubble animation in header and main */
 /* bubble refernece https://freefrontend.com/css-bubbles/#google_vignette */
 header::before,
 main::before {
@@ -851,6 +864,7 @@ main::before {
   animation: bubbles-rise 20s linear infinite;
 }
 
+/* moves bubbles upwards */
 @keyframes bubbles-rise {
   from {
     transform: translateY(30px);
@@ -863,10 +877,12 @@ main::before {
   }
 }
 
+/* removes the default image from header */
 header {
   background-image: none !important;
 }
 
+/* adds a bubble border at top of page */
 header::after {
   content: "";
   position: absolute;
@@ -874,18 +890,21 @@ header::after {
   left: 0;
   width: 100%;
   height: 40px;
-
   background: radial-gradient(circle at 20px 20px, rgba(255, 255, 255, 0.643) 20px, transparent 21px);
   background-size: 40px 40px;
 
   opacity: 0.3;
 }
 
+/* NAVIGATION */
+
+/* styles the nav bar background */
 nav {
   background: rgba(55, 89, 163, 0.313);
   padding: 10px 0;
 }
 
+/* diaplays nav links in two columns */
 nav ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -895,6 +914,7 @@ nav ul {
   list-style: none;
 }
 
+/* styles the nav links */
 nav ul a {
   display: block;
   text-align: center;
@@ -904,6 +924,7 @@ nav ul a {
   text-decoration: none;
 }
 
+/* adds a hover effect to nav links */
 nav ul a:hover {
   color: rgb(255, 255, 255);
   background: rgba(255, 255, 255, 0.1);
@@ -911,7 +932,7 @@ nav ul a:hover {
   transform: scale(1.05);
 }
 
-
+/* chnages navigation on desktop to a row layout */
 @media (min-width: 768px) {
   nav ul {
     display: flex;
@@ -921,6 +942,9 @@ nav ul a:hover {
   }
 }
 
+/* ABOUT SECTION */
+
+/* styles first about card */
 #about .container:first-child {
   max-width: 1100px;
   padding: 30px;
@@ -935,6 +959,7 @@ nav ul a:hover {
   margin-bottom: 100px;
 }
 
+/* styles first about card heading */
 #about .container:first-child h2 {
   color: rgba(197, 234, 245, 0.875);
   font-size: clamp(1.8rem, 3vw, 2.8rem);
@@ -949,6 +974,7 @@ nav ul a:hover {
   padding: 15px 18px;
 }
 
+/* styles the quote in the first about card */
 #about .container:first-child blockquote {
   margin: 20px 0;
   padding: 20px;
@@ -958,11 +984,13 @@ nav ul a:hover {
   box-shadow: 0 0 15px rgba(126, 224, 255, 0.3);
 }
 
+/* changes the colour of the paragraphs and links */
 #about .container:first-child p,
 #about .container:first-child a {
   color: #eafcff;
 }
 
+/* styles the second about card */
 #about .container:nth-child(2) {
   max-width: 1100px;
   padding: 30px;
@@ -974,9 +1002,10 @@ nav ul a:hover {
     inset 0 0 20px rgba(255,255,255,0.1);
   font-family: "Trebuchet MS", Arial, sans-serif;
   transition: transform 0.3s ease;
+  margin-bottom: 100px;
 }
 
-
+/* styles second about card heading */
 #about .container:nth-child(2) h2 {
   color: rgba(197, 234, 245, 0.875);
   font-size: clamp(1.8rem, 3vw, 2.8rem);
@@ -991,11 +1020,12 @@ nav ul a:hover {
   padding: 15px 18px;
 }
 
-
+/* changes the colour of the paragraphs and links */
 #about .container:nth-child(2) p {
   color: #d3ecf0 !important;
 }
 
+/* felxiable */
 #about .container:nth-child(2) ul {
   display: flex;
   flex-wrap: wrap;
@@ -1005,7 +1035,7 @@ nav ul a:hover {
   margin-top: 20px;
 }
 
-
+/* styles each item in the second card as bubbles */
 #about .container:nth-child(2) li {
   height: 120px;
   display: flex;
@@ -1022,11 +1052,16 @@ nav ul a:hover {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* adds a hover effect on the bubbles */
 #about .container:nth-child(2) li:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 0 15px rgba(126,224,255,0.6);
 }
 
+
+/* STYLES SECTION */
+
+/* adds a seaweed background picture */
 #styles {
   position: relative;
   background-image: url("seaweed\ background.jpg");  
@@ -1034,6 +1069,7 @@ nav ul a:hover {
   background-size: cover;
 }
 
+/* add a dark overlay to blend the colours  */
 #styles::before {
   content: "";
   position: absolute;
@@ -1046,6 +1082,7 @@ nav ul a:hover {
   );
 }
 
+/* styles the profile sectin with a gradiant to match the background */
 .profile {
   background: linear-gradient(
     to bottom,
@@ -1059,6 +1096,7 @@ nav ul a:hover {
   height: 350px;
 }
 
+/* gives styles more heaigh on desktop */
 @media (min-width: 768px) {
   #styles {
     min-height: 800px;     
@@ -1066,7 +1104,7 @@ nav ul a:hover {
   }
 }
 
-
+/* styles the profile heading */
 .profile h4 {
   color: #eafcff;
   font-family: "Trebuchet MS", Arial, sans-serif;
@@ -1074,21 +1112,24 @@ nav ul a:hover {
   margin-bottom: 15px;
 }
 
+/* styles the profile list layout */
 .profile ul {
   justify-content: center;
   gap: 18px;
   padding: 0;
 }
 
+/* styles list items */
 .profile ul li {
   color: #eafcff;
 }
 
+/* Makes subtitile text bold */
 .profile ul li span:first-child {
   font-weight: bold;
 }
 
-
+/* styles the profile button */
 .profile .container > a {
   background: rgba(255,255,255,0.14);
   color: #ffffff;
@@ -1097,30 +1138,32 @@ nav ul a:hover {
   padding: 12px 23px;
 }
 
+/* adds hover effect to button */
 .profile .container > a:hover {
   background: rgba(255,255,255,0.22);
   transform: translateY(-3px);
 }
 
-
-
+/* styles the heading  */
 #styles h2 {
   color: #103a59;
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-
+/* displays in flexible layout */
 #styles .features {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+/* styles list layout size */
 #styles .features li {
   min-height: unset;
   padding: 0;
 }
 
+/* styles the feature boxes */
 #styles .features li > span {
   min-width: 220px;
   min-height: 120px;
@@ -1129,6 +1172,7 @@ nav ul a:hover {
   backdrop-filter: blur(6px);
 }
 
+/* styles the link inside the feature box */
 #styles .features a {
   color: #123f60;
   font-size: 1.5rem;
@@ -1136,35 +1180,43 @@ nav ul a:hover {
   text-decoration: none;
 }
 
+/* add hover effect */
 #styles .features li > span:hover {
   transform: translateY(-4px);
   background: rgba(255,255,255,0.2);
 }
 
+/* styles the view all button */
 #styles .link-allstyles {
   border-radius: 999px;
   background: rgba(16, 58, 89, 0.8);
   color: #ffffff;
 }
 
+/* add hover effct to button */
 #styles .link-allstyles:hover {
   background: rgba(16, 58, 89, 0.95);
   transform: translateY(-3px);
 }
 
+/* removes colour bar between profile and styles */
 .profile {
   margin-bottom: 0 ;
 }
-
 #styles {
   margin-top: 0 ;
   margin-bottom: 0 ;
 }
 
+
+/* FOOTER  */
+
+/* removes an S from old css */
 .page-footer::before {
   display: none;
 }
 
+/* Styles the footer part */
 .page-footer {
   text-align: center;
   color: #eafcff;
@@ -1175,6 +1227,7 @@ nav ul a:hover {
   );
 }
 
+/* style the list vertically */
 .page-footer ul {
   display: flex;
   flex-direction: column;
@@ -1183,16 +1236,21 @@ nav ul a:hover {
   padding: 0;
 }
 
+/* remove underline from links */
 .page-footer a {
   text-decoration: none;
 }
 
+/* bring the footer up closer on desktop */
 @media (min-width:768px){
   .page-footer{
     margin-top: -60px;
   }
 }
 
+/* DOWNLOAD FILES  */
+
+/* styles the download file section */
 #files {
   text-align: center;
   padding: 100px 20px;
@@ -1200,6 +1258,7 @@ nav ul a:hover {
 
 }
 
+/* styles the heading */
 #files h3 {
   height: auto;
   opacity: 1;
@@ -1208,7 +1267,7 @@ nav ul a:hover {
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-
+/* styles the download links */
 #files a {
   display: inline-block;
   width: 100%;
@@ -1222,12 +1281,15 @@ nav ul a:hover {
   font-weight: bold;
 }
 
+/* adds hover effect */
 #files a:hover {
   background: rgba(255,255,255,0.25);
   transform: translateY(-4px);
 }
 
+/* CONTRIBUTE AND GUIDELINES */
 
+/* adds the same css used on the about section on the other containers */
 #contribute .container,
 #guidelines .container {
   max-width: 1100px;
@@ -1242,8 +1304,6 @@ nav ul a:hover {
   transition: transform 0.3s ease;
   margin-bottom: 100px;
 }
-
-
 #contribute h2,
 #guidelines h2 {
   color: rgba(197, 234, 245, 0.875);
@@ -1258,9 +1318,25 @@ nav ul a:hover {
   text-transform: uppercase;
   padding: 15px 18px;
 }
-
 #contribute p,
 #guidelines p,
 #guidelines li {
   color: #eafcff;
+}
+
+/* adds a sway animation to the main content cards */
+@keyframes sway {
+  0%   { transform: rotate(0deg) translateX(0); }
+  50%  { transform: rotate(1deg) translateX(2px); }
+  100% { transform: rotate(0deg) translateX(0); }
+}
+
+/* apply to all main cards */
+#about .container:first-child,
+#about .container:nth-child(2),
+#guidelines .container,
+#contribute .container,
+#files .container,
+#styles .features li > span {
+  animation: sway 5s ease-in-out infinite;
 }
