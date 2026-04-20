@@ -828,7 +828,6 @@ header a {
   border-radius: 20px;
 }
 
-
 header,
 main {
   position: relative;
@@ -887,7 +886,6 @@ nav {
   padding: 10px 0;
 }
 
-
 nav ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -906,7 +904,6 @@ nav ul a {
   text-decoration: none;
 }
 
-
 nav ul a:hover {
   color: rgb(255, 255, 255);
   background: rgba(255, 255, 255, 0.1);
@@ -923,7 +920,6 @@ nav ul a:hover {
     gap: 20px;
   }
 }
-
 
 #about .container:first-child {
   max-width: 1100px;
@@ -970,7 +966,6 @@ nav ul a:hover {
 #about .container:first-child:hover {
   transform: translateY(-10px);
 }
-
 
 #about .container:nth-child(2) {
   max-width: 1100px;
@@ -1036,10 +1031,6 @@ nav ul a:hover {
   box-shadow: 0 0 15px rgba(126,224,255,0.6);
 }
 
-
-
-
-
 #styles {
   position: relative;
   background-image: url("seaweed\ background.jpg");  
@@ -1076,4 +1067,92 @@ nav ul a:hover {
     min-height: 800px;     
     
   }
+}
+
+
+.profile h4 {
+  color: #eafcff;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.profile ul {
+  justify-content: center;
+  gap: 18px;
+  padding: 1;
+}
+
+.profile ul li {
+  color: #eafcff;
+}
+
+.profile ul li span:first-child {
+  font-weight: bold;
+}
+
+
+.profile .container > a {
+  background: rgba(255,255,255,0.14);
+  color: #ffffff;
+  border: 2px solid rgba(255,255,255,0.35);
+  border-radius: 999px;
+  padding: 12px 23px;
+  
+}
+
+.profile .container > a:hover {
+  background: rgba(255,255,255,0.22);
+  transform: translateY(-3px);
+}
+
+
+
+#styles h2 {
+  color: #103a59;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+
+#styles .features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#styles .features li {
+  min-height: unset;
+  padding: 1;
+}
+
+#styles .features li > span {
+  min-width: 220px;
+  min-height: 120px;
+  border-radius: 24px;
+  border: 2px solid rgba(255,255,255,0.35);
+  backdrop-filter: blur(6px);
+}
+
+#styles .features a {
+  color: #123f60;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#styles .features li > span:hover {
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.2);
+}
+
+/* View All Styles button */
+#styles .link-allstyles {
+  border-radius: 999px;
+  background: rgba(16, 58, 89, 0.8);
+  color: #ffffff;
+}
+
+#styles .link-allstyles:hover {
+  background: rgba(16, 58, 89, 0.95);
+  transform: translateY(-3px);
 }
