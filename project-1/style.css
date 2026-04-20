@@ -745,7 +745,7 @@ nav ul li {
   font-size: var(--font-size-h4);
 }
 
-.link-codepen::before {
+/* .link-codepen::before {
   position: absolute;
   padding-right: 1.25em;
   transform: translate(15%, -90%) rotate(-3deg);
@@ -756,7 +756,7 @@ nav ul li {
   color: #6f6ffd;
   font-size: 0.85em;
   content: "Jump right in";
-}
+} */
 
 .link-allstyles {
   font-size: var(--font-size-h4);
@@ -1196,3 +1196,43 @@ nav ul a:hover {
     margin-top: -60px;
   }
 }
+
+
+
+#files {
+  text-align: center;
+  padding: 100px 20px;
+  height: 500px;
+
+}
+
+#files h3 {
+  height: auto;
+  opacity: 1;
+  color: #eafcff;
+  font-size: 50px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+
+#files a {
+  display: inline-block;
+  width: 100%;
+  max-width: 320px;
+  margin: 15px;
+  padding: 30px 40px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #ffffff;
+  text-decoration: none;
+  
+  font-weight: bold;
+}
+
+#files a:hover {
+  background: rgba(255,255,255,0.25);
+  transform: translateY(-4px);
+}
+
+
